@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App - HTML, CSS & JS</title>
+
+    <!-- External CSS file linking  -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- favicon icon linking -->
+    <link rel="shortcut icon" href="images/clouds.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="search">
+        <input type="text" placeholder="Enter city name" spellcheck="false" />
+        <button><img src="images/search.png" alt="" /></button>
+      </div>
+      <div class="error">
+        <p>*Invalid city name</p>
+      </div>
+      <div class="fillInput">
+        <p>*First enter the city name</p>
+      </div>
+
+      <div class="weather">
+        <img src="images/rain.png" class="weather-icon" alt="" />
+        <h1 class="temperature">22&deg;c</h1>
+        <h2 class="city">Varanasi</h2>
+
+        <div class="details">
+          <div class="col">
+            <img src="images/humidity.png" alt="" />
+            <div class="hum">
+              <p class="humidity">50%</p>
+              <p>Humidity</p>
+            </div>
+          </div>
+          <div class="col">
+            <img src="images/wind.png" alt="" />
+            <div class="hum">
+              <p class="wind">15km/h</p>
+              <p>Wind Speed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

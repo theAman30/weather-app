@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Protest+Revolution&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kalam", cursive;
+    font-weight: 700;
+}
+
+body {
+    /* height: 100%; */
+    background: #222;
+}
+
+.card {
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    margin: 6.25rem auto 0;
+    border-radius: 1.25rem;
+    padding: 2.5rem 2.1rem;
+    text-align: center;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input {
+    border: none;
+    outline: none;
+    background: #ebfffc;
+    color: #555;
+    padding: 0.6rem 1.5rem;
+    height: 3.7rem;
+    border-radius: 1.8rem;
+    flex: 1;
+    margin-right: 1rem;
+    font-size: 1.1rem;
+}
+
+button {
+    border: none;
+    outline: none;
+    background-color: #ebfffc;
+    border-radius: 50%;
+    width: 3.7rem;
+    height: 3.7rem;
+    cursor: pointer;
+}
+
+button img {
+    width: 1rem;
+}
+
+button:hover {
+    border: 1px solid black;
+}
+
+
+.weather-icon {
+    width: 10.6rem;
+    margin-top: 1.8rem;
+}
+
+.weather h1 {
+    font-size: 5rem;
+    font-weight: 500;
+}
+
+.weather h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-top: -0.6rem;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.25rem;
+    margin-top: 3.1rem;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img {
+    width: 2.5rem;
+    margin-right: 0.6rem;
+}
+
+.humidity, .wind {
+    font-size: 1.7rem;
+    margin-top: -0.3rem;
+}
+
+.weather {
+    display: none;
+}
+
+.error, .fillInput {
+    text-align: left;
+    color: red;
+    margin-left: 0.6rem;
+    font-size: 0.8rem;
+    margin-top: 0.6rem;
+    display: none;
+}
+
+
+
+@media (max-width:500px) {
+    .details {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 0.25rem;
+        margin-top: 2.5rem;
+    }
+
+    .col {
+        display: flex;
+        align-items:center;
+        flex-direction: column;
+        margin-top: -1.2rem;
+    }
+
+    .hum {
+        margin-top: 1.5rem;
+    }
+
+    .col img {
+        margin-bottom: -0.5rem;
+    }
+
+    .card {
+        margin: 1.25rem auto 0;
+    }
+
+    .weather h2 {
+        margin-top: -1.5rem;
+    }
+}
+
+@media (max-width:445px) {
+    .search input {
+        width: 50vw;
+    }
+}
